@@ -1,0 +1,12 @@
+body {
+    font-family: Helvetica;
+    background: rgb(1,1,1);
+    padding-left: 60px;
+    padding-right: 60px;
+    overflow-x: hidden;
+    touch-action: pan-y;
+}
+
+svg {
+    fill: white;
+}

@@ -1,0 +1,196 @@
+@import url('global.css');
+@import url('sharedvar.css');
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    place-items: center;
+    user-select: none;
+
+    .top-left {
+        display: flex;
+        place-items: center;
+        flex-wrap: nowrap;
+
+        .chrs {
+            color: white;
+        }
+    }
+
+    .top-right {
+        display: flex;
+        place-items: center;
+        flex-wrap: nowrap;
+        gap: 15px;
+
+        .top-button {
+            display: flex;
+            place-items: center;
+            border: none;
+            background: transparent;
+            color: white;
+            padding: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: var(--border);
+
+            svg {
+                &:hover {
+                    animation: shake 0.35s forwards ease-in-out;
+                }
+            }
+        }
+
+        .top-button:nth-of-type(3) {
+            background: white;
+            color: black;
+            border-radius: 70px;
+            padding: 10px;
+            font-weight: 700;
+        }
+    }
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    padding-left: 20px;
+
+    .section1 {
+        display: flex;
+        place-items: center;
+        justify-content: space-between;
+
+        .section-left {
+            flex: 4;
+            user-select: none;
+            
+            .chrs-greet {
+                color: white;
+                font-size: 22px;
+            }
+
+            .chrs-alternative {
+                margin-top: -12px; margin-left: 12px; 
+                color: rgba(150,150,150,0.8);
+
+                .underline {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .section-right {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    .section2 {
+        display: flex;
+        place-items: center;
+        justify-content: space-between;
+
+        .section-left {
+            flex: 1;
+            
+            .chrs-greet {
+                color: white;
+                font-size: 22px;
+            }
+
+            .chrs-description {
+                margin-left: 24px; 
+                color: rgba(150,150,150,0.8);
+                text-align: justify;
+
+                .underline {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .section-right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    .section3 {
+        user-select: none;
+        display: flex;
+        place-items: center;
+        justify-content: space-between;
+
+        .section-left {
+            flex: 1;
+            padding: 20px;
+            
+            .section-title {
+                color: white;
+                font-size: 22px;
+            }
+
+            .project-container {
+                display: flex;
+                border: var(--border);
+                padding: 20px;
+                gap: 10px;
+                overflow-x: auto;
+                overflow-y: hidden;
+                flex-wrap: nowrap;
+                height: 55vh;
+
+                .project {
+                    cursor: pointer;
+                    display: flex;
+                    flex-direction: column;
+                    border: var(--border);
+                    padding: 5px;
+                    place-items: center;
+                    max-width: 150px;
+                    max-height: 200px;
+                    border-radius: 8px;
+
+                    .image-container {
+                        border: var(--border);
+                        max-height: 150px; max-width: 150px;
+                        height: 200px;
+                        width: 150px;
+                        overflow: hidden;
+                        background: white;
+                        border-radius: 8px;
+
+                        img {
+                            height: 100%; width: 100%;
+                        }
+                    }
+
+                    .project-name {
+                        color: white;
+                        font-size: 12px;
+                    }
+
+                    .project-date {
+                        margin-top: -8px;
+                        color: white;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .section-right {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
