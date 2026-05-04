@@ -112,6 +112,7 @@ svg {
                 flex: 2;
                 max-height: 900px;
                 height: 80vh;
+                width: auto;
 
                 .section {
                     padding: 5px;
@@ -193,8 +194,36 @@ svg {
             .home-right {
                 display: flex;
                 flex-direction: column;
-                flex: 0;
+                flex: 1;
                 border-left: var(--border);
+                padding: 0 10px;
+
+                .home-right-about {
+                    display: flex;
+                    flex-direction: column;
+                    border-bottom: var(--border);
+
+                    .title {
+                        color: white;
+                        font-size: 14px;
+                    }
+                }
+
+                .right-container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1px;
+
+                    .title {
+                        color: white;
+                        font-size: 13px;
+                    }
+
+                    .desc {
+                        color: rgba(255,255,255,0.6);
+                        font-size: 12px;
+                    }
+                }
             }
         }
     }
