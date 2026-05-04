@@ -225,7 +225,13 @@ svg {
     }
 }
 
+#menu.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
 #menu {
+    transform: translateX(0);
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -239,6 +245,7 @@ svg {
     border: var(--border);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    transition: all 0.5s ease-in-out;
 
     .document-container {
         display: flex;
