@@ -204,6 +204,7 @@ svg {
                     border-bottom: var(--border);
 
                     .title {
+                        user-select: none;
                         color: white;
                         font-size: 14px;
                     }
@@ -215,13 +216,19 @@ svg {
                     gap: 1px;
 
                     .title {
+                        user-select: none;
                         color: white;
                         font-size: 13px;
                     }
 
                     .desc {
+                        user-select: none;
                         color: rgba(255,255,255,0.6);
                         font-size: 12px;
+
+                        b {
+                            user-select: auto;
+                        }
                     }
                 }
             }
