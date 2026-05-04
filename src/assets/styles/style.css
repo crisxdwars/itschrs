@@ -214,23 +214,21 @@ svg {
         .right-bottom {
             display: flex;
             flex-direction: column;
+
+            .button svg {
+                transition: all 0.15s ease-in-out;
+                &:hover {
+                    fill: rgba(255,255,255,0.6);
+                }
+            }
         }
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 620px) {
     .home-right {
         display: none !important;
         visibility: hidden;
-    }
-
-    .right {
-        padding: 0;
-    }
-
-    
-
-    .main {
-        padding: 0;
+        opacity: 0;
     }
 }
