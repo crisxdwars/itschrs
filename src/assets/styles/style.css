@@ -5,6 +5,7 @@
 
 * {
     box-sizing: border-box;
+    scrollbar-width: none;
 }
 
 body {
@@ -110,7 +111,7 @@ svg {
 
             .home-left {
                 overflow-x: hidden;
-                overflow-y: pan-y;
+                touch-action: pan-y;
                 width: auto;
                 display: flex;
                 flex-direction: column;
