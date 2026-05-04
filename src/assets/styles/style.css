@@ -247,6 +247,7 @@ svg {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     transition: all 0.35s ease-in-out;
+    z-index: 1000;
 
     .document-container {
         display: flex;
@@ -271,13 +272,18 @@ svg {
 
 }
 
-#overlay.overlay-hidden {
-    
+#overlay.overlay-hide {
+    visibility: hidden;
+    opacity: 0;
 }
 
 #overlay {
+    backdrop-filter: blur(2px);
+    position: absolute;
+    height: 100vh; width: 100vw;
     background: rgba(1,1,1,0.7);
-
+    opacity: 1;
+    transition: all 0.35s ease-in-out;
 }
 
 @media (max-width: 620px) {
