@@ -228,6 +228,7 @@ svg {
 #menu.hidden {
     visibility: hidden;
     opacity: 0;
+    transform: translate(500px, -50%);
 }
 
 #menu {
@@ -245,7 +246,7 @@ svg {
     border: var(--border);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.35s ease-in-out;
 
     .document-container {
         display: flex;
@@ -267,6 +268,15 @@ svg {
             margin-left: 10px;
         }
     }
+
+}
+
+#overlay.overlay-hidden {
+    
+}
+
+#overlay {
+    background: rgba(1,1,1,0.7);
 
 }
 
