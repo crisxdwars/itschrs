@@ -162,6 +162,7 @@ svg {
                         height: 300px;
 
                         .project {
+                            user-select: none;
                             padding: 15px;
                             border: var(--border);
                             display: flex;
