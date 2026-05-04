@@ -1,22 +1,11 @@
 :root {
-    --border: rgba(255,255,255,0.2) 1px solid;
+    --border: rgba(100,100,100,0.1) 1px solid;
     --bg-2: rgb(2,2,2);
-}
-
-::-webkit-scrollbar-track {
-    background: transparent;
-    border: none;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: red;
-    border: none;
-    border-radius: 20px;
 }
 
 * {
     box-sizing: border-box;
-    scrollbar-width: thin;
+    scrollbar-width: none;
 }
 
 body {
@@ -96,10 +85,15 @@ svg {
                 background: transparent;
                 cursor: pointer;
                 user-select: none;
-                color: white;
-                border: var(--border); border-radius: 20px;
-                padding: 8px;
-                font-size: 12px;
+                color: rgb(255,255,255);
+                border: var(--border); border-radius: 8px;
+                padding: 5px;
+                font-size: 10px;
+                transition: all 0.15s ease-in-out;
+
+                &:hover {
+                    background: rgba(255,255,255,0.2);
+                }
             }
         }
 
@@ -184,7 +178,7 @@ svg {
 
                             .project-date {
                                 color: rgba(255,255,255,0.6);
-                                font-size: 12px;
+                                font-size: 10px;
                                 margin-bottom: 0;
                             }
 
@@ -228,5 +222,15 @@ svg {
     .home-right {
         display: none !important;
         visibility: hidden;
+    }
+
+    .right {
+        padding: 0;
+    }
+
+    
+
+    .main {
+        padding: 0;
     }
 }
