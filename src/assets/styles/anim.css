@@ -1,0 +1,8 @@
+@keyframes rightMENU {
+    from {
+        right: -200px;
+    } to {
+        
+        right: 0;
+    }
+}

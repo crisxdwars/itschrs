@@ -271,27 +271,20 @@ svg {
 #menu.hidden {
     visibility: hidden;
     opacity: 0;
-    transform: translate3d(100%, -50%, 0);
-    pointer-events: none;
 }
 
 #menu {
-    pointer-events: auto;
+    display: flex;
     transform: translateX(0);
     padding: 10px;
-    display: flex;
     flex-direction: column;
     position: absolute;
     gap: 10px;
-    top: 50%; right: 0;
-    transform: translateY(-50%);
-    height: 30rem; width: 13rem;
+    top: 6.3rem; left: 0;
+    height: 100%; width: 100%;
     background: var(--bg-2);
     border: var(--border);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
     z-index: 1000;
-    transition: all 0.35s ease-in-out;
 
     .document-container {
         display: flex;
